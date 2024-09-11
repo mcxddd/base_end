@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+mysql-connector-python  # Add this if you're using MySQL
+sqlalchemy              # Add this if you're using SQLAlchemy for ORM
