@@ -1,10 +1,9 @@
-# base_end/database/mybaseweb_db.py
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from config import MYBASEWEB_DATABASE_URL
 
-# Create SQLAlchemy engine and session for mybaseweb system
+# 使用 Oracle 连接
 engine = create_engine(MYBASEWEB_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()

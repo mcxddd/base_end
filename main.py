@@ -1,11 +1,10 @@
-# base_end/main.py
 from fastapi import FastAPI
-from routers import mybaseweb
+from routers import mybase_routers
 
 app = FastAPI()
 
 # Include routers for different parts of the system
-app.include_router(mybaseweb.router)
+app.include_router(mybase_routers.router)
 #app.include_router(financial.router)
 
 @app.get("/")

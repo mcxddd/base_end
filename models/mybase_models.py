@@ -1,6 +1,6 @@
 # base_end/models/mybaseweb_models.py
 from sqlalchemy import Column, Integer, String
-from database.mybaseweb_db import Base
+from database.mybase_db import Base
 
 class Post(Base):
     __tablename__ = "posts"

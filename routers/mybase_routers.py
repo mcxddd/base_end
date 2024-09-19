@@ -1,9 +1,9 @@
 # base_end/routers/mybaseweb.py
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from models.mybaseweb_models import Post
-from database.mybaseweb_db import get_mybaseweb_db
-from services.mybaseweb_service import create_post, get_all_posts
+from models.mybase_models import Post
+from database.mybase_db import get_mybaseweb_db
+from services.mybase_service import create_post, get_all_posts
 
 router = APIRouter()
 
